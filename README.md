@@ -1,1 +1,1 @@
-# Remix-Netflix
+# RemixNetflix

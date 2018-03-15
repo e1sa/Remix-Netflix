@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title> Remix Netflix</title>
+
+
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="row m-2">
+      <div class="col-sm">
+        <h1> Remix Netflix <h1>
+        <h5>Ever wonder what your favorite movies would look like with someone who looks like you...this is more description this is more descriptionthis is more descriptionthis is more descriptionthis is more descriptionthis is more descriptionthis is more descriptionthis is more descriptionthis is more descriptionthis is more description</h5>
+
+    </div>
+  </div>
+  <div  id="genre-row"  class="row">
+    <div class="col-sm">
+      <h2 class="mt-2 text-center"> Choose your favorite genre </h2>
+      <div class="row m-2 text-center">
+        <div class="col-sm">
+          <h3> Comedy </h3>
+          <img src="Assets/Daddy's Home 2.jpeg" class="img-fluid btn m-2 bt-over" alt="Placeholder image" onClick="setGenre('Comedy')">
+
+        </div>
+        <div class="col-sm text-center">
+          <h3> Action/Drama </h3>
+          <img src="Assets/Captain America Winter Soldier.jpeg" class="img-fluid btn m-2 bt-over" alt="Placeholder image" onClick="setGenre('Action/Drama')">
+
+        </div>
+        <div class="col-sm">
+          <h3> Romance</h3>
+          <img src="Assets/Beauty and The Beast.jpeg" class="img-fluid btn m-2 bt-over" alt="Placeholder image" onClick="setGenre('Romance')">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div id="gender-row" class="row" hidden>
+    <div  class="col-sm">
+      <div class="row m-2">
+        <div class="col-sm text-center">
+            <h2> Now choose a gender </h2>
+      </div>
+     </div>
+        <div class="row m-2 text-center">
+
+              <div class="col-sm">
+                <img src="Assets/male.png" class="img-fluid btn m-2 bt-over gender" alt="male image" onClick="setGender('Male')">
+                <br/>
+
+                  <h3> Male </h3>
+              </div>
+              <div class="col-sm">
+                <img src="Assets/nonbinary.png" class="img-fluid btn m-2 bt-over gender" alt="nonbinary image" onClick="setGender('Nonbinary')">
+                  <br/>
+                <h3>Nonbinary</h3>
+              </div>
+              <div class="col-sm">
+                <img src="Assets/female.png" class="img-fluid btn m-2 bt-over gender" alt="female image" onClick="setGender('Female')">
+                  <br/>
+                  <h3>Female</h3>
+              </div>
+
+      </div>
+    </div>
+  </div>
+  <div  id="race-row" class="row" hidden>
+    <div  class="col-sm">
+          <div class="row m-2">
+                <div class="col-sm text-center">
+                      <h2> Now pick a race</h2>
+                </div>
+           </div>
+           <div class="row m-2 text-center">
+              <div class="col-sm">
+                <img id="Black" src="Assets/aVQka2S9_400x400.jpg" class="img-fluid btn m-2 bt-over race" alt="Viola Davis"onClick="setRace('Black')" >
+                <br/>
+
+              <h3> Black </h3>
+              </div>
+              <div class="col-sm">
+                <img id="Latino"src="Assets/America-Ferrera.jpg" class="img-fluid btn m-2 bt-over race" alt=""  onClick="setRace('Latino')">
+                <br/>
+                  <h3>Latino</h3>
+              </div>
+              <div class="col-sm">
+                <img id="Asian"src="Assets/Constancewu.jpg" class="img-fluid btn m-2 bt-over race" alt="" onClick="setRace('Asian')">
+                <br/>
+                  <h3>Asian</h3>
+              </div>
+      </div>
+    </div>
+  </div>
+
+    <div  id="results" class="row" hidden>
+      <div class="col-sm">
+            <div class="row m-2">
+
+                  <div id="options-output" class="col-md-4 col-12
+                  text-center">
+
+                    <img id="output-image" src="" class="img-fluid" alt="" height="500px">
+
+                    <div class="row">
+                      <div class="col-6">
+                        try again
+                      </div>
+                      <div class="col-6">
+                        share
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8 col-12">
+                    <h2 id="output-title"> </h2>
+                    <p id="output-description"> </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+  <!-- container closing DIV -->
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="JS/script.js"> </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+
+.gender{
+    border-radius: 150px;
+}
+
+.race{
+      border-radius: 400px;
+  }
+h1{
+  font-family: 'Shrikhand', cursive;
+}
+
+.bt-over:hover{
+  opacity: 0.5;
+}
