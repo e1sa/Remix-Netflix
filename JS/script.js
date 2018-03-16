@@ -2,6 +2,10 @@ var selectedGenre = ""; //start empty
 var selectedGender = ""; //start empty
 var selectedRace = ""; //start empty
 
+function refresh(){
+    location.reload();
+}
+
 function setGenre(genreType) {
   selectedGenre = genreType; //assign to global store variable
   document.getElementById('genre-row').hidden = true; // hides genre row
@@ -59,9 +63,9 @@ function processResults(selectedGenre, selectedGender, selectedRace) {
 
 
   } else if (selectedGenre === "Comedy" && selectedGender === "Female" && selectedRace === "Latino") {
-    document.getElementById('output-image').src = "Assets/";
-    document.getElementById('output-title').innerHTML = "Your Remix: ";
-    document.getElementById('output-description').innerHTML = "Based off your choices  is the best movie for you";
+    document.getElementById('output-image').src = "Assets/curves.jpg";
+    document.getElementById('output-title').innerHTML = "Your Remix: Real Women Have Curves ";
+    document.getElementById('output-description').innerHTML = "Based off your choices Real Women Have Curves is the best movie for you";
 
   } else if (selectedGenre === "Comedy" && selectedGender === "Male" && selectedRace === "Asian") {
     document.getElementById('output-image').src = "Assets/kungFuHustle.jpg";
@@ -106,9 +110,9 @@ function processResults(selectedGenre, selectedGender, selectedRace) {
 
 
   } else if (selectedGenre === "Action/Drama" && selectedGender === "Female" && selectedRace === "Asian") {
-    document.getElementById('output-image').src = "Assets/";
-    document.getElementById('output-title').innerHTML = "Your Remix:";
-    document.getElementById('output-description').innerHTML = " Based off your choices is the best movie for you. ";
+    document.getElementById('output-image').src = "Assets/okja.jpg";
+    document.getElementById('output-title').innerHTML = "Your Remix: Okja";
+    document.getElementById('output-description').innerHTML = " Based off your choices Okja is the best movie for you. ";
 
 
 
@@ -121,34 +125,48 @@ function processResults(selectedGenre, selectedGender, selectedRace) {
 
 
   } else if (selectedGenre === "Romance" && selectedGender === "Female" && selectedRace === "Black") {
-    document.getElementById('output-image').src = "Assets/";
+    document.getElementById('output-image').src = "Assets/beyondthelights.jpg";
     document.getElementById('output-title').innerHTML = "Your Remix: Beyond The Lights ";
     document.getElementById('output-description').innerHTML = " Based off your choices Beyond The Lights is the best movie for you. ";
 
 
   } else if (selectedGenre === "Romance" && selectedGender === "Male" && selectedRace === "Latino") {
-    document.getElementById('output-image').src = "Assets/";
+    document.getElementById('output-image').src = "Assets/dirtydancing.jpg";
     document.getElementById('output-title').innerHTML = "Your Remix: Dirty Dancing: Havana Nights ";
     document.getElementById('output-description').innerHTML = " Based off your choices Dirty Dancing: Havana Nights is the best movie for you. ";
 
 
   } else if (selectedGenre === "Romance" && selectedGender === "Female" && selectedRace === "Latino") {
-    document.getElementById('output-image').src = "Assets/";
+    document.getElementById('output-image').src = "Assets/overherdeadbody.jpg";
     document.getElementById('output-title').innerHTML = "Your Remix: Over Her Deadbody ";
     document.getElementById('output-description').innerHTML = " Based off your choices Over Her Deadbody is the best movie for you. ";
 
 
   } else if (selectedGenre === "Romance" && selectedGender === "Male" && selectedRace === "Asian") {
-    document.getElementById('output-image').src = "Assets/";
+    document.getElementById('output-image').src = "Assets/shanghaicalling.jpg";
     document.getElementById('output-title').innerHTML = "Your Remix: Shanghai Calling ";
     document.getElementById('output-description').innerHTML = " Based off your choices Shanghai Calling is the best movie for you. ";
 
 
   } else if (selectedGenre === "Romance" && selectedGender === "Female" && selectedRace === "Asian") {
-    document.getElementById('output-image').src = "Assets/";
+    document.getElementById('output-image').src = "Assets/MississippiMasala.jpg";
     document.getElementById('output-title').innerHTML = "Your Remix: Mississippi Masala ";
     document.getElementById('output-description').innerHTML = " Based off your choices Mississippi Masala is the best movie for you. ";
 
-  }
 
+} else if (selectedGenre === "Action/Drama" && selectedGender === "Nonbinary" && selectedRace === "Latino") {
+  document.getElementById('output-image').src = "Assets/gunhillroad.jpg";
+  document.getElementById('output-title').innerHTML = "Your Remix: Gun Hill Road";
+  document.getElementById('output-description').innerHTML = " Based off your choices Gun Hill Road is the best movie for you. ";
+
+} else if (selectedGenre === "Comedy" && selectedGender === "Nonbinary" && selectedRace === "Latino" || selectedRace === "Black") {
+document.getElementById('output-image').src = "Assets/tangerine.jpg";
+document.getElementById('output-title').innerHTML = "Your Remix: Tangerine";
+document.getElementById('output-description').innerHTML = " Based off your choices Tangerine is the best movie for you. ";
+
+} else if (selectedGenre === "Action/Drama" && selectedGender === "Nonbinary" && selectedRace === "Asian") {
+  document.getElementById('output-image').src = "Assets/oa.jpg";
+  document.getElementById('output-title').innerHTML = "Your Remix: The OA";
+  document.getElementById('output-description').innerHTML = " Based off your choices The OA is the best TV show for you. ";
+}
 }
