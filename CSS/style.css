@@ -1,10 +1,10 @@
 
 .gender{
-    border-radius: 150px;
+    border-radius: 50%;
 }
 
 .race{
-      border-radius: 400px;
+      border-radius: 50%;
   }
 h1{
   font-family: 'Shrikhand', cursive;
