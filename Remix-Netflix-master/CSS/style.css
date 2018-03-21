@@ -1,0 +1,20 @@
+
+.gender{
+    border-radius: 50%;
+}
+
+.race{
+      border-radius: 50%;
+  }
+h1{
+  font-family: 'Shrikhand', cursive;
+}
+
+.bt-over:hover{
+  opacity: 0.5;
+}
+
+#output-rec{
+  color:red;
+
+}
