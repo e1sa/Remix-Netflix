@@ -13,3 +13,8 @@ h1{
 .bt-over:hover{
   opacity: 0.5;
 }
+
+#output-rec{
+  color:red;
+
+}
